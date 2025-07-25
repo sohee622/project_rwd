@@ -1,31 +1,29 @@
-Paradigm Shift by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 📘 커밋 컨벤션 & 버전 관리 기준
 
+## 🏷️ 커밋 말머리 규칙
 
-Say hello to Paradigm Shift, my first addition to HTML5 UP in more than a year (!!!).
-Took things in a slightly different direction with this one, partly to mess with CSS
-grid (which this one relies on pretty heavily) but mostly to get back to making weirder
-and more experimental designs/layouts. Anyway, hope you dig it, and thanks for the
-continued support despite the lack of updates :)
+| 말머리 | 설명 |
+|--------|------|
+| `feat` | 새로운 기능 또는 컨텐츠 추가 |
+| `perf` | 성능 개선 |
+| `refactor` | 기능 변경 없이 코드 구조 개선 |
+| `style` | 코드 포맷팅, 세미콜론 누락 등 스타일 관련 수정 (기능 변화 없음) |
+| `test` | 테스트 코드 추가 또는 수정 |
+| `docs` | 문서 수정 |
+| `fix` | 버그 수정 |
+| `chore` | 빌드 업무, 패키지 매니저 설정 등 기타 작업 |
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+> ✅ **예시**:  
+> `feat: 로그인 기능 추가`  
+> `fix: 로그인 오류 수정`  
+> `docs: README에 커밋 규칙 추가`
 
-(* = not included)
+---
 
-AJ
-aj@lkn.io | @ajlkn
+## 📌 버전 관리 기준 (Semantic Versioning)
 
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+| 유형 | 설명 | 예시 |
+|------|------|------|
+| `MAJOR` | 호환되지 않는 대규모 변경이 있을 때 | `1.5.2 → 2.0.0` |
+| `MINOR` | 호환되면서 새로운 기능이 추가될 때 | `1.5.2 → 1.6.0` |
+| `PATCH` | 호환되며 버그 수정 또는 사소한 변경이 있을 때 | `1.5.2 → 1.5.3` |
